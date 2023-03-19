@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h1>Title: </h1>
+<h2>{{job.title}}</h2>
+
+<h1>Location: </h1>
+<h2>{{job.location}}</h2>
+
+<h1>Salary: </h1>
+<h2>{{job.salary}}</h2>
+
+
+<h1>Requirements</h1>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+
+<div class="mt-4">
+    <a href="/apply" class="px-4 py-2 border-none text-white bg-blue-700 text-base text-center">Apply</a>
+</div>
+{% endblock %}

@@ -61,7 +61,7 @@ def apply():
 
 @app.route("/api/jobs")
 def jobs():
-	jobs = load_jobs_from_db()
+	jobs = load_jobs_from_db() # loads the job from the db
 	return jsonify(jobs)
 
 

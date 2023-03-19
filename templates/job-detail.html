@@ -2,28 +2,37 @@
 
 {% block content %}
 
-<h1>Title: </h1>
-<h2>{{job.title}}</h2>
 
-<h1>Location: </h1>
-<h2>{{job.location}}</h2>
+<div>
+    <h1>Title: </h1>
+    <h2>{{job.title}}</h2>
 
-<h1>Salary: </h1>
-<h2>{{job.salary}}</h2>
+    <h1>Location: </h1>
+    <h2>{{job.location}}</h2>
 
-
-<h1>Requirements</h1>
-<ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
+    <h1>Salary: </h1>
+    <h2>{{job.salary}}</h2>
 
 
-<div class="mt-4">
-    <a href="/apply" class="px-4 py-2 border-none text-white bg-blue-700 text-base text-center">Apply</a>
+    <h1>Requirements</h1>
+    <ul class="list-disc">
+        {% for line in job.requirements.split("\n") %}
+        <li>{{line}}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Qualifications</h2>
+    <ol class="list-decimal">
+        {% for line in job.responsibilities.split("\n") %}
+        <li>{{line}}</li>
+        {% endfor %}
+    </ol>
+
+
+    <div class="mt-4">
+        <a href="/apply" class="px-4 py-2 border-none text-white bg-blue-700 text-base text-center">Apply</a>
+    </div>
+
 </div>
+
 {% endblock %}

@@ -3,17 +3,15 @@
 
 {% block content %}
 
-<div class="container flex justify-center">
-    <div class="flex items-center justify-center border border-gray-100 px-12 py-8">
+
+<div class="container flex flex-col">
+    <h1 class="text-center font-bold text-lg mb-4">Application Form</h1>
+    <div class="flex items-center justify-center mx-auto border border-gray-100 px-12 py-8 max-w-lg">
         <form>
             <div class="container">
-                <div>
-                    <label class="block mb-1 text-xl text-left">First name</label>
-                    <input type="text" name="first_name" class="block w-full">
-                </div>
                 <div class="mt-4">
-                    <label class="block mb-1 text-xl text-left">Last name</label>
-                    <input type="text" name="last_name" class="block w-full">
+                    <label class="block mb-1 text-xl text-left">Name</label>
+                    <input type="text" name="name" class="block w-full">
                 </div>
                 <div class="mt-4">
                     <label class="block mb-1 text-xl text-left">Email</label>

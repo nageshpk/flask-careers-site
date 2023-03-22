@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 from database import load_jobs_from_db, load_job_from_db
 
 app = Flask(__name__)
@@ -57,6 +57,12 @@ def view_details(id):
 @app.route('/apply')
 def apply():
 	return render_template('form-apply.html')
+
+
+@app.route('/submit')
+def submitForm():
+	data = request.args
+	return jsonify(data)
 
 
 @app.route("/api/jobs")

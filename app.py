@@ -59,10 +59,10 @@ def apply():
 	return render_template('form-apply.html')
 
 
-@app.route('/submit')
+@app.route('/submit', methods=['post'])
 def submitForm():
-	data = request.args
-	return jsonify(data)
+	data = request.form
+	return render_template('application_submitted.html', application = data)
 
 
 @app.route("/api/jobs")

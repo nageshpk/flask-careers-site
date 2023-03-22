@@ -5,13 +5,17 @@
 
 
 <div class="container flex flex-col">
-    <h1 class="text-center font-bold text-lg mb-4">Application Form</h1>
+    <h1 class="text-center font-medium text-lg underline mb-4">Apply for this job</h1>
     <div class="flex items-center justify-center mx-auto border border-gray-100 px-12 py-8 max-w-lg">
         <form>
             <div class="container">
                 <div class="mt-4">
-                    <label class="block mb-1 text-xl text-left">Name</label>
-                    <input type="text" name="name" class="block w-full">
+                    <label class="block mb-1 text-xl text-left">First Name</label>
+                    <input type="text" name="first_name" class="block w-full">
+                </div>
+                <div class="mt-4">
+                    <label class="block mb-1 text-xl text-left">Last Name</label>
+                    <input type="text" name="last_name" class="block w-full">
                 </div>
                 <div class="mt-4">
                     <label class="block mb-1 text-xl text-left">Email</label>
@@ -19,14 +23,22 @@
                 </div>
                 <div class="mt-4">
                     <label class="block mb-1 text-xl text-left">Phone number</label>
-                    <input type="number" name="phone_number" class="block w-full">
+                    <input type="tel" name="phone_number" class="block w-full">
                 </div>
                 <div class="mt-4">
                     <label class="block mb-1 text-xl text-left">Upload resume</label>
                     <input type="file" name="resume" class="block w-full">
                 </div>
-                <div class="mt-8">
-                    <a href="#" class="px-6 py-3 border-none bg-blue-700 text-white text-base font-bold hover:bg-blue-500">Submit</a>
+                <div class="mt-4">
+                    <label class="block mb-1 text-xl text-left">LinkedIn Profile</label>
+                    <input type="text" name="linkedin" class="block w-full">
+                </div>
+                <div class="mt-4">
+                    <label class="block mb-1 text-xl text-left">Github</label>
+                    <input type="text" name="github" class="block w-full">
+                </div>
+                <div class="mt-8 flex items-center justify-center">
+                    <input class="px-6 py-3 border-none bg-blue-700 text-white text-base font-bold hover:bg-blue-500 text-center" type="submit" value="Submit Application"></a>
                 </div>
             </div>
         </form>

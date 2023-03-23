@@ -1218,6 +1218,10 @@ input:checked + .toggle-bg {
   width: 100%;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1553,6 +1557,11 @@ input:checked + .toggle-bg {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .pl-3 {
